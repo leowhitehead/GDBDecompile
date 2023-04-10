@@ -22,5 +22,6 @@ Type `decompile <function name>` within GDB to decompile a function. If the name
 This plugin is a work in progress and there are plans for a number of other features in upcoming version:
 - [ ] Decompilation of memory ranges for analysing shellcode
 - [ ] Support for multiple decompiler backends
+- [ ] Interactivity with Ghidra for specifying data types and function signatures
 
 Any contributions, suggestions or feedback are appreciated so feel free to submit any pull requests, raise issues or get in touch.
