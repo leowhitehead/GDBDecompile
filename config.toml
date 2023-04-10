@@ -1,0 +1,2 @@
+ghidra_path = "~/ghidra_10.2.3_PUBLIC"
+decomp_path = "/tmp/GDBDecompile"
