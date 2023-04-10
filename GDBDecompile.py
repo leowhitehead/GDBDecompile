@@ -73,7 +73,7 @@ class GDBDecompile:
             os.mkdir(path)
             envVar = dict(os.environ, GHIDRA_INSTALL_DIR=os.path.expanduser(self.options["ghidra_path"]))
             self.display("Decompiling...")
-            subprocess.run(["ghidrecomp", "-o", path, target], env=envVar, stdout=subprocess.DEVNULL)
+            subprocess.run(["ghidrecomp", "-o", path, target], env=envVar, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             self.display("Done!")
             self.decompiled = True
         outDir = os.path.join(path, os.path.basename(target), function) + "*"
@@ -88,9 +88,6 @@ class GDBDecompile:
         with open(functions[0], "r") as f:
             source = f.read()
         return source
-        
-
-
 
     def _loadConfig(self, name="config.toml") -> dict:
         """
