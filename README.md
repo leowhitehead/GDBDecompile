@@ -9,6 +9,7 @@ This is a plugin that allows you to decompile functions with Ghidra's Decompiler
 ```
 $ git clone https://github.com/leowhitehead/GDBDecompile.git
 $ cd GDBDecompile/
+$ pip install -r requirements.txt
 $ echo source $PWD/GDBDecompile.py >> ~/.gdbinit
 ```
 3. Ensure that the value of `ghidra_path` in `~/GDBDecompile/config.toml` is set correctly
